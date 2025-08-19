@@ -3,13 +3,9 @@ function Nav(){
     <nav className='flex justify-between items-center'>
       <h3 className='text-xl font-bold'>DevSnack</h3>
 
-      <ul>
+      <ul className='*:hover:text-[#14B8A6] font-semibold flex justify-between gap-3'>
         <li>Home</li>
-      </ul>
-      <ul>
         <li>Search</li>
-      </ul>
-      <ul>
         <li>Favorites</li>
       </ul>
 
