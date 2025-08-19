@@ -1,5 +1,5 @@
 import './App.css';
-import './fonts/fontawesome';
+import './icons/fontawesome';
 
 function App() {
   return (
