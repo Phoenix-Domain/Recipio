@@ -1,41 +1,74 @@
-# DevSnack Recipe App
+# 🍳 DevSnack — Recipe & Snack Finder
 
-A simple and elegant recipe app built with React, JavaScript, and Tailwind CSS. This app allows users to search for recipes, save their favorites, and discover new dishes.
+## Overview
+DevSnack is a web app that helps users quickly find meal or snack ideas using ingredients they already have.  
+It’s built with **React, TailwindCSS, and Vite**, following professional workflows from design → development → testing → deployment.
 
-# Usage
+This project is part of my portfolio to demonstrate:
+- API integration & search/filter UX
+- State management & persistence (favorites)
+- Responsive + accessible UI design
+- Professional Git/GitHub workflows
 
-## Searching for Recipes
+---
 
-Use the search bar on the homepage or navigate to the Search page.
+## Features (Planned)
+- 🔍 **Search & Filter Recipes** by name or ingredient
+- 📖 **Recipe Details** (ingredients, steps, image)
+- ⭐ **Favorites** page (persistent with localStorage)
+- ⚡ **Responsive & Fast** (Lighthouse ≥ 90)
+- ♿ **Accessible** (keyboard nav, contrast, ARIA basics)
+- 🚨 Clear **loading, empty, and error states**
 
-Enter ingredients or recipe names.
+---
 
-Apply filters for meal type or dietary preferences.
+## Tech Stack
+- [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- LocalStorage for persistence
+- Deployed on [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/)
 
-## Saving Favorites.
+---
 
-Click the heart icon on any recipe card to save it to favorites.
+## Project Status
+🚧 **In Progress — Day 1 (Design Phase)**  
+- [x] Requirements gathered  
+- [x] Wireframes in Figma (`/design`)  
+- [ ] Development setup (Day 2)  
+- [ ] Core features (Day 3–5)  
+- [ ] QA + Deployment (Day 6–7)  
 
-Access your favorites from the Favorites page in the navigation menu.
+---
 
-## Viewing Recipe Details.
+## Folder Structure (Planned)
+devsnack/
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page-level components
+│ ├── hooks/ # Custom React hooks
+│ ├── lib/ # Utilities/helpers
+│ ├── assets/ # Images/icons
+│ └── types/ # TypeScript types (from Project 2 onward)
+├── docs/ # Docs, screenshots, diagrams
+├── design/ # Wireframes & style guide exports
+└── README.md
 
-Click on any recipe card to view detailed information.
+yaml
+Copy code
 
-Find ingredients, instructions, and nutritional information.
+---
 
-Save recipes to favorites from the details page.
+## Definition of Done (DoD) for v1.0
+- Functional: search, detail, favorites working
+- Non-functional: responsive, accessible, performant
+- Lighthouse ≥ 90 on mobile
+- Deployed live (Vercel/Netlify)
+- README with screenshots + Loom walkthrough
+- Tagged release `v1.0.0`
 
-## Discovering New Recipes
+---
 
-Use the "Random Recipe" feature on the homepage
-Browse categories by clicking on the category cards
-
-# License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-# Acknowledgments
-
-- Recipe images from Unsplash
-- Icons from Font Awesome Icons
+## License
+MIT License
