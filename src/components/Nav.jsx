@@ -1,6 +1,6 @@
 function Nav(){
   return(
-    <nav className='flex justify-between items-center'>
+    <nav className='flex justify-between items-center py-4 px-2'>
       <h3 className='text-xl font-bold'>DevSnack</h3>
 
       <ul className='*:hover:text-[#14B8A6] font-semibold flex justify-between gap-3'>
