@@ -3,7 +3,7 @@ function Card({ name, image, category, region, source, youtube}){
     <article className='flex flex-col w-full bg-gray-300 shadow-md rounded-3xl'>
       <div className="relative w-full rounded-3xl">
         <div className="flex flex-col relative rounded-3xl">
-          <div className="w-full h-[100%] absolute top-0 left-0 z-2 bg-[rgba(0,0,0,0.6)] rounded-3xl">
+          <div className="w-full h-[100%] absolute top-0 left-0 z-2 bg-[rgba(0,0,0,0.6)] rounded-t-3xl">
 
           </div>
           <div className="text-white flex justify-between py-2 px-1 absolute top-0 right-0 z-3">
@@ -15,7 +15,7 @@ function Card({ name, image, category, region, source, youtube}){
 
             <p className="bg-gray-800 p-1 rounded-full">{region}</p>
           </div>
-        <img src={image} alt={`Photo of ${name}`} className="rounded-3xl"/>
+        <img src={image} alt={`Photo of ${name}`} className="rounded-t-3xl"/>
 
         
         </div>
