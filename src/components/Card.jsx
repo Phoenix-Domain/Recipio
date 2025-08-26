@@ -27,11 +27,11 @@ function Card({ name, image, category, region, source, youtube}){
         </h3>
 
         <p className="bg-gray-800 p-1 rounded-full my-4 w-fit py-2 px-4">
-          <a href={source} className="text-white" target="_blank">Click here for the source link</a>
+          <a href={source} className="text-white" target="_blank">Full recipe &rarr;</a>
         </p>
 
         <p className="bg-gray-800 p-1 rounded-full my-4 w-fit py-2 px-4">
-          <a href={youtube} className="text-white" target="_blank">Watch the tutorial</a>
+          <a href={youtube} className="text-white" target="_blank">Video guide &rarr;</a>
         </p>        
         
       </div>
