@@ -1,6 +1,7 @@
 import Button from "../components/button"
 import { useEffect, useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import Card from "../components/Card";
 
 function RecipeInspiration(){
   const [meal, setMeal] = useState(null);
@@ -9,7 +10,9 @@ function RecipeInspiration(){
     try{
       const { data } = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
 
-      setMeal(data.meals[0]);
+      if(data.meals && data.meals.length > 0){
+        setMeal(data.meals[0])
+      }
     }catch(error){
       console.log(error);
     }
@@ -18,6 +21,8 @@ function RecipeInspiration(){
   useEffect(() => {
     fetchData();
   }, [])
+
+  
   return(
     <section className='p-1'>
       <div className='flex justify-between my-4 items-center'>
@@ -31,7 +36,7 @@ function RecipeInspiration(){
       </div>
 
       <article className='grid grid-cols-2 gap-5 p-4'>
-        
+        {meal && <Card name={meal.strMeal} image={meal.strMealThumb} category={meal.strCategory} region={meal.strArea} source={meal.strSource} youtube={meal.strYoutube}/>}
       </article>
 
     </section>
