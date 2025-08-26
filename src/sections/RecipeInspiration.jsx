@@ -31,7 +31,7 @@ function RecipeInspiration(){
         </h2>
         
         <a href="" className='text-cyan-800 font-semibold'>
-          <Button content='Next Recipe' />
+          <Button content='Next Recipe' onClick={fetchData} />
         </a>
       </div>
 
