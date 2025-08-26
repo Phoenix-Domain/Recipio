@@ -40,8 +40,8 @@ function Features(){
       </div>
 
       <article className='grid grid-cols-2 gap-5 p-4'>
-        {meal && meal.map((meal, index) =>{
-          return <Card key={index} name={meal.strMeal} image={meal.strMealThumb} category={meal.strCategory} region={meal.strArea} source={meal.strSource} youtube={meal.strYoutube}/>
+        {meal && meal.map((meal) =>{
+          return <Card key={meal.idMeal} name={meal.strMeal} image={meal.strMealThumb} category={meal.strCategory} region={meal.strArea} source={meal.strSource} youtube={meal.strYoutube}/>
         })}
       </article>
 
