@@ -1,6 +1,7 @@
 import { useState, useEffect} from 'react'
 import axios from 'axios'
 import Card from '../components/Card';
+import Button from '../components/button';
 
 function Features(){
   const [meal, setMeal] = useState([]);
@@ -34,7 +35,7 @@ function Features(){
         </h2>
         
         <a href="" className='text-cyan-800 font-semibold'>
-          View all &rarr;
+          <Button content='View all &rarr;' />
         </a>
       </div>
 
