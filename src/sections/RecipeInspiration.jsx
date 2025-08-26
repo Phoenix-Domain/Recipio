@@ -1,8 +1,8 @@
 function RecipeInspiration(){
   return(
-    <>
-    
-    </>
+    <section>
+      
+    </section>
   )
 }
 

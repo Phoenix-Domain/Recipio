@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react'
 import axios from 'axios'
-import Card from './Card';
+import Card from '../components/Card';
 
 function Features(){
   const [meal, setMeal] = useState([]);
